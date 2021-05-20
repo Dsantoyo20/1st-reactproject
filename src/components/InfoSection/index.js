@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button} from "../ButtonElements";
-
+import Fade from 'react-reveal/Fade';
 
 import {
     InfoContainer, 
@@ -56,11 +56,13 @@ const InfoSection = ({
                         </BtnWrap>
                      </TextWrapper>
                 </Column1>
+               <Fade right>
                 <Column2>
                 <ImgWrap>
                 <Img src={img} alt={alt} />
                 </ImgWrap>
                 </Column2>
+                </Fade>
             </InfoRow>
          </InfoWrapper>
      </InfoContainer> 

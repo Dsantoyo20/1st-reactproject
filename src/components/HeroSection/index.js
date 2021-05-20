@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Video from "../../videos/video.mp4";
 import {Button} from "../ButtonElements";
+import Fade from 'react-reveal/Fade';
 import {HeroContainer, 
     HeroBg, 
     VideoBg, 
@@ -11,6 +12,8 @@ import {HeroContainer,
     ArrowForward, 
     ArrowRight
 } from "./HeroElements";
+
+
 
 const HeroSection  = () => {
 
@@ -25,11 +28,15 @@ const HeroSection  = () => {
            <HeroBg>
              <VideoBg autoPlay loop muted src={Video} type="video/mp4" />  
             </HeroBg>
+            
             <HeroContent>
+            <Fade left>
                 <HeroH1> Around the Globe </HeroH1>
+                
                 <HeroP>
                 Sign up for a new account.    
                 </HeroP>
+                </Fade>
                 <HeroBtnWrapper>
                     <Button to="signup" onMouseEnter={onHover}
                     onMouseLeave={onHover} primary="true" dark="true" >
@@ -37,6 +44,7 @@ const HeroSection  = () => {
                     </Button>    
                 </HeroBtnWrapper>    
             </HeroContent> 
+            
         </HeroContainer>
     )
 }

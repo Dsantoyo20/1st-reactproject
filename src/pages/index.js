@@ -10,7 +10,7 @@ import {
 import Navbar from '../components/Navbar';
 import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
-
+import Fade from 'react-reveal/Fade';
 
 const Home = () => {
     
@@ -27,7 +27,9 @@ const Home = () => {
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Navbar toggle={toggle} /> 
           <HeroSection />
+          <Fade left>
           <InfoSection {...homeObjOne} /> 
+          </Fade>
           <InfoSection {...homeObjTwo} /> 
           <Services />
           <InfoSection {...homeObjThree} /> 
