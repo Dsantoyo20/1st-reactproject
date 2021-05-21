@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {FaBars} from "react-icons/fa";
+// import {FaBars} from "react-icons/fa";
+import { RiBarChartHorizontalLine } from "react-icons/ri";
 import {animateScroll as scroll} from 'react-scroll';
 import{
     Nav, 
@@ -39,7 +40,7 @@ const Navbar = ({toggle}) => {
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>LOGO</NavLogo>
             <MobileIcon onClick={toggle}>
-               <FaBars /> 
+              <RiBarChartHorizontalLine/> 
             </MobileIcon>
             <NavMenu>
               <NavItem>
